@@ -77,6 +77,16 @@ public class MainActivity extends AppCompatActivity {
         miTtransaccion.replace(R.id.layoutFragmentos,miBorrar);
         miTtransaccion.commit();
     }
+    public void Actualizar(View miVista3){
+        FragmentManager miManejador;
+        FragmentTransaction miTtransaccion;
+        actualizar miActualizar;
+        miManejador=getSupportFragmentManager();
+        miTtransaccion=miManejador.beginTransaction();
+        miActualizar= new actualizar();
+        miTtransaccion.replace(R.id.layoutFragmentos,miActualizar);
+        miTtransaccion.commit();
+    }
 
 }
 
