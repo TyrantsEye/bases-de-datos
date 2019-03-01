@@ -5,7 +5,7 @@ import android.arch.persistence.room.PrimaryKey;
 
 @Entity (tableName = "Salones")
 public class Ubicacion {
-    @PrimaryKey
+    @PrimaryKey (autoGenerate = true)
     private int id;
 
     private int salon;

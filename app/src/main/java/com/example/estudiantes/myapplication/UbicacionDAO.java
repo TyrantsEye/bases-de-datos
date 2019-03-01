@@ -11,7 +11,7 @@ public interface UbicacionDAO {
     @Insert
     public void insertUbicacion(Ubicacion miUbicacion);
 
-    @Query("select * from Salones" )
+    @Query("select * from salones" )
     public List<Ubicacion> getSalon();
 
 }

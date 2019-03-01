@@ -52,8 +52,10 @@ public class Insertar extends Fragment implements View.OnClickListener {
         datos.setLatitud(miLatitud);
         datos.setLongitud(miLongitud);
 
+
         MainActivity.miDatabase.UbicacionDao().insertUbicacion(datos);
-        Toast.makeText(getActivity(),"Se ingreso correctamente",Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(getActivity(),"Éxito",Toast.LENGTH_SHORT).show();
     }
 }
 
