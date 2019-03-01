@@ -48,23 +48,19 @@
             app:layout_constraintVertical_bias="0.081" />
 
         <TextView
-            android:id="@+id/Ed"
+            android:id="@+id/mostrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="176dp"
-            tools:layout_editor_absoluteY="376dp" />
-
-        <TextView
-            android:id="@+id/mostrarsalon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="176dp"
-            android:layout_marginTop="324dp"
-            android:layout_marginEnd="235dp"
-            android:layout_marginBottom="388dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.392" />
+
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>
