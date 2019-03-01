@@ -7,30 +7,58 @@ import android.arch.persistence.room.PrimaryKey;
 public class Ubicacion {
     @PrimaryKey
     private int id;
+
     private int salon;
-    private String ubicacion;
+    private String sede;
+    private String edificio;
+    private Double longitud;
+    private Double latitud;
 
     public int getId() {
         return id;
-    }
-
-    public int getSalon() {
-        return salon;
-    }
-
-    public String getUbicacion() {
-        return ubicacion;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
+    public int getSalon() {
+        return salon;
+    }
+
     public void setSalon(int salon) {
         this.salon = salon;
     }
 
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
+    public String getSede() {
+        return sede;
+    }
+
+    public void setSede(String sede) {
+        this.sede = sede;
+    }
+
+    public String getEdificio() {
+        return edificio;
+    }
+
+    public void setEdificio(String edificio) {
+        this.edificio = edificio;
+    }
+
+    public Double getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(Double longitud) {
+        this.longitud = longitud;
+    }
+
+    public Double getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(Double latitud) {
+        this.latitud = latitud;
     }
 }
