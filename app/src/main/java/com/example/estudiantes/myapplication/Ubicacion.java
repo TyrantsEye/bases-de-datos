@@ -3,7 +3,7 @@ package com.example.estudiantes.myapplication;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
-@Entity
+@Entity (tableName = "Salones")
 public class Ubicacion {
     @PrimaryKey
     private int id;
