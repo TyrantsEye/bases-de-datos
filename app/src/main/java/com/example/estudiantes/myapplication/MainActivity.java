@@ -59,14 +59,25 @@ public class MainActivity extends AppCompatActivity {
     public void Lista(View miVista2){
         FragmentManager miManejador;
         FragmentTransaction miTtransaccion;
-        lista miConsulta;
+        lista miLista;
         miManejador=getSupportFragmentManager();
         miTtransaccion=miManejador.beginTransaction();
-        miConsulta= new lista();
-        miTtransaccion.replace(R.id.layoutFragmentos,miConsulta);
+        miLista= new lista();
+        miTtransaccion.replace(R.id.layoutFragmentos,miLista);
         miTtransaccion.commit();
 
     }
+    public void BorrarS(View miVista3){
+        FragmentManager miManejador;
+        FragmentTransaction miTtransaccion;
+        borrar miBorrar;
+        miManejador=getSupportFragmentManager();
+        miTtransaccion=miManejador.beginTransaction();
+        miBorrar= new borrar();
+        miTtransaccion.replace(R.id.layoutFragmentos,miBorrar);
+        miTtransaccion.commit();
+    }
+
 }
 
 
