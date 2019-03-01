@@ -46,7 +46,16 @@ public class MainActivity extends AppCompatActivity {
         transaccion.commit();
         Log.d("MyApp","I am here");
     }
-
+    public void Consulta (View vista){
+        FragmentManager miManejador;
+        FragmentTransaction miTtransaccion;
+        Consultar miConsulta;
+        miManejador=getSupportFragmentManager();
+        miTtransaccion=miManejador.beginTransaction();
+        miConsulta= new Consultar();
+        miTtransaccion.replace(R.id.layoutFragmentos,miConsulta);
+        miTtransaccion.commit();
+    }
 }
 
 

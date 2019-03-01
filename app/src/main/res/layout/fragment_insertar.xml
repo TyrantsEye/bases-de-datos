@@ -32,50 +32,85 @@
             android:id="@+id/Salon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="102dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Salon"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="102dp" />
+            android:hint="Salon"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.149"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
 
         <EditText
             android:id="@+id/Sede"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Sede"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="172dp" />
+            android:hint="Sede"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.374" />
 
         <EditText
             android:id="@+id/Edificio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Edificio"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="253dp" />
+            android:hint="Edificio"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/Latitud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Latitud"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="333dp" />
+            android:hint="Latitud"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.622" />
 
         <EditText
             android:id="@+id/Longitud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Longitud"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="413dp" />
+            android:hint="Longitud"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.722" />
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>
