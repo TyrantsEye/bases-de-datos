@@ -31,7 +31,9 @@ private TextView miTexto;
         miTexto=(TextView) vista.findViewById(R.id.informacion);
         List<Ubicacion> ubicacions = MainActivity.miDatabase.UbicacionDao().getSalon();
         String informacion="";
+        Consultar objeto=new Consultar();
         for(Ubicacion ubicacion: ubicacions){
+
             int id=ubicacion.getId();
             int salon=ubicacion.getSalon();
             String edificio= ubicacion.getEdificio();
@@ -39,7 +41,8 @@ private TextView miTexto;
             Double latitud=ubicacion.getLatitud();
             Double longitud=ubicacion.getLongitud();
 
-            informacion=informacion+"\n\n"+"ID :"+id+"\n Salon :"+salon+"\n Edificio :"+edificio+"\n Sede :"+sede+"\n Latitud: "+latitud+"\n Longitud :"+longitud;
+            informacion=informacion+"\n\n"+"ID :"+id+"\n Salon :"+salon+"\n Edificio :"+edificio+"\n Sede :"+sede+"\n lat :"+latitud+"\n lon :"+longitud;
+
         }
         miTexto.setText(informacion);
 
