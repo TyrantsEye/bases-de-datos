@@ -59,12 +59,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36" />
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/vermapa"
             android:layout_width="294dp"
-            android:layout_height="186dp"
+            android:layout_height="294dp"
             android:layout_marginStart="72dp"
             android:layout_marginTop="257dp"
             android:layout_marginEnd="45dp"
@@ -72,8 +73,27 @@
             android:onClick="mapas"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnConsultar" />
+            app:layout_constraintTop_toBottomOf="@+id/btnConsultar"
+            app:layout_constraintVertical_bias="0.805" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Home"
+            android:onClick="reset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011" />
 
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>

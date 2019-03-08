@@ -88,10 +88,18 @@ public class MainActivity extends AppCompatActivity {
         miTtransaccion.replace(R.id.layoutFragmentos,miActualizar);
         miTtransaccion.commit();
     }
-    public void mapas(View miVista3){
-        Intent intent= new Intent(getApplicationContext(),Mapa.class);
-        startActivity(intent);
+    public void reset(View miVista3){
+        Insertar Cambiar;
+        Inicio miMenu;
+       FragmentManager miManejador=getSupportFragmentManager();
+       FragmentTransaction miTransaccion;
+        miTransaccion=miManejador.beginTransaction();
+        Cambiar=new Insertar();
+        miMenu=new Inicio();
+        miTransaccion.replace(R.id.layoutFragmentos,miMenu);
+        miTransaccion.commit();
     }
+
 
 
 }

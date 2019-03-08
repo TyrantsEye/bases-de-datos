@@ -34,6 +34,8 @@ private Button miBoton;
 private Double latitudmapa;
 private Double longitudmapa;
 private int salonmapa;
+private String edificiomapa;
+private String sedemapa;
 
 @Override
 public void onResume() {
@@ -93,7 +95,9 @@ public void onResume() {
                 int salon=ubicacion.getSalon();
                 salonmapa=ubicacion.getSalon();
                 String edificio= ubicacion.getEdificio();
+                edificiomapa = ubicacion.getEdificio();
                 String sede=ubicacion.getSede();
+                sedemapa=ubicacion.getSede();
                 latitudmapa=ubicacion.getLatitud();
 
                 longitudmapa=ubicacion.getLongitud();
@@ -103,7 +107,7 @@ public void onResume() {
         }
         miTexto2.setText(informacion);
         LatLng sydney = new LatLng(latitudmapa, -74.065492);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Salon : "+salonmapa));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("\n\n Salon : "+salonmapa+"\n Edificio :"+edificiomapa+"\n Sede :"+sedemapa));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,15));
 
 
