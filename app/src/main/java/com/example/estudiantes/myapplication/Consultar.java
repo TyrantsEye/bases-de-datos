@@ -107,7 +107,7 @@ public void onResume() {
         }
         miTexto2.setText(informacion);
         LatLng sydney = new LatLng(latitudmapa, -74.065492);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("\n\n Salon : "+salonmapa+"\n Edificio :"+edificiomapa+"\n Sede :"+sedemapa));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Salon : "+salonmapa));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,15));
 
 
